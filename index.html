@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+        }
+        td, th {
+            text-align: center;
+            padding: 1.5em;
+        }
+        th,li{
+            font-size: 1.5em;
+        }
+        h2{
+        font-size: 2.5em;
+        color: red;}
+        h3{font-size: 1.5em; }
+        section{ text-align:center; }
+        </style>
+    <title>Pedir menu DOM</title>
+</head>
+<body>
+    <header>
+
+
+    </header>
+    <body>
+
+        <section class="menu">
+
+            <h2>MOSTRAR MENÚ</h2>
+            <ul>
+                <li>  CROQUETAS -- 10€ -- C01 </li>
+                <li> COSTILLAS -- 15€ -- E01</li>
+                <li> HELADO --  20€ -- P01</li>
+                <li> VINO -- 25€ -- B01</li>     
+            </ul>
+            <!--QUEDA MAS BONITO CON TABLE pero recuerdo digistes algo de no usarla
+<h2>MOSTRAR MENÚ</h2>
+
+<table border="1", width="100%">
+ <tr>
+<th>NOMBRE</th>
+<th>PRECIO</th>
+<th>CODIGO</th>
+</tr>
+<tr>
+<td>CROQUETAS</td>
+<td>10€</td>
+<td>C01</td>
+</tr>
+<tr>
+<td>COSTILLAS</td>
+<td>15€</td>
+<td>E01</td>
+</tr>
+<tr>
+<td>HELADO</td>
+<td>20€</td>
+<td>P01</td>
+</tr>
+<tr>
+    <td>VINO</td>
+    <td>25€</td>
+    <td>B01</td>
+</tr>
+</table>    -->       
+</section>
+        
+
+<section class="solicitarpedido">
+    <h2>REALICE SU PEDIDO</h2>
+
+    <form name="pedido" >
+    <h3 class="comanda">¿Que le gustaria tomar?</h3>
+    <ul id="carta">
+        <li><input type="checkbox" id="croquetas" name="comanda" value="10"> Croquetas</li>
+        <li> <input type="checkbox" id="costillas" name="comanda" value="15"> Costillas</li>
+        <li> <input type="checkbox" id="helados" name="comanda" value="20"> Helado</li>
+        <li> <input type="checkbox" id="vino" name="comanda" value="25"> Vino</li>
+    </ul>
+    <section class="botones">
+        <button class="enviar" type="submit">Enviar</button>
+        <button class="borrar" type="reset">Borrar</button>
+    </section>
+    </form>
+</section>
+<!--
+<script>
+        function enviarPrecio(){
+        const coste= document.getElementById("croquetas").;
+    }
+</script>-->
+
+</body>
+
+</html>
+
