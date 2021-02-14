@@ -14,7 +14,7 @@ const mostrarMenu = () => {
     document.write(`COD - PLATO - PRECIO`)
     document.write(`--------------------`)
     CARTA.forEach( plato => {
-        document.write(`${plato.cod} - ${plato.nombre} - ${plato.precio}€`)
+        document.write(`${plato.cod} - ${plato.nombre} - ${plato.precio}€ - ${plato.espacio}`)
     } )
 }
 mostrarMenu()
